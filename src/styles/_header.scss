@@ -1,0 +1,52 @@
+@use 'variaveis';
+
+.header {
+
+    &__container {
+        background-color: variaveis.$corDeFundo;
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            padding: 0 12px 0 20px;
+
+        }
+    }
+
+    &__logo {
+        margin-left: 16px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        margin-right: 408px;
+
+        @media (max-width: 768px) {
+            max-width: 78px;
+
+        }
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        
+
+        &__item {
+            background-color: variaveis.$corDeFundoBotao;
+            padding: 8px 24px 8px 24px;
+            text-decoration: none;
+            margin-right: 16px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-family: Roboto, sans-serif;
+        }
+    }
+
+    .button {
+
+        @media (max-width: 768px) {
+            justify-content: center;
+        }
+    }
+}

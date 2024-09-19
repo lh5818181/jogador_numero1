@@ -1,0 +1,32 @@
+.games {
+
+    h2 {
+        text-align: center;
+        margin-bottom: 26px;
+    }
+
+    &__list {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 36px;
+        margin-right: 36px;
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+    }
+
+        &__item {
+            text-align: center;
+            
+            h4 {
+                margin-top: 20px;
+                margin-bottom: 46px;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
