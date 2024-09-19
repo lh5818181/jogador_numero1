@@ -1,6 +1,10 @@
 @use 'variaveis';
 
 .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 
     &__container {
         background-color: variaveis.$corDeFundo;
@@ -23,7 +27,7 @@
 
         @media (max-width: 768px) {
             max-width: 78px;
-
+            margin-right: 70px;
         }
     }
 
